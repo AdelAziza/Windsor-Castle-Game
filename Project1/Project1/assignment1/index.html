@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>First Project</title>
+		<link href="game.css" type="text/css" rel="stylesheet" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<section id="intro" class="border2">
+				<span class="title" id="t">Welcome to the Windsor Castle Challenge</span>
+			<div id="m">
+			</div>
+				<div>
+					<img id ="im" src="imagesCastle/funny.gif" width="700" height="450" alt="hello">
+				</div>
+				<h3 class="h3">Read carefully  before starting the game:</h3>
+				<P class="p1">
+			Organizational Protection(OP) is specialized in protecting the Windsor Castle. You have been chosen to go on a secret mission to collect <strong>four essential items</strong> that have been missing in the royal castle. You need to collect all four items in order to complete the mission. <br>
+			Be careful!! Here is the list of the three items :</p>
+			<ul class="list" style="list-style-type:disc;">
+			<li>The Crown of the Queen</li>
+			<li>A key to open the room</li>
+			<li>The royal sword arm </li>
+		</ul>
+						<div>
+							<button id="start">Start the Game</button>
+						</div>
+			</section>
+			<section id="gameDisplay" class="border2">
+				<h3 id="t2">the Windsor Castle Challenge</h3>
+				<br><br><br><br>
+			<img id ="locImage" src="imagesCastle/j.jpg" width="500" height="300" alt="hello">
+			<br>
+			<div id="output"></div><br><br>
+			<p>Please enter a location betweeen <strong>north, east, south and west</strong></p>
+			<input id="input" type="text" placeholder="Enter your action..." autofocus='autofocus'>
+			<button id="enter">Enter</button>
+			<br>
+			<button id="saveTheGame">Save the Game</button>
+			<button id="restoreTheGame">Restore The Game</button>
+			<button id="restartTheGame">Restart The Game</button>
+			<button id="helpButton">Help</button>
+			<button id="anim3">Zooming</button>
+			<div class="textEffect">
+					 <h1>Believe in yourself</h1>
+					 <div class="line"></div>
+			</div>
+			<img id="an" src="imagesCastle/a2.png" width="200" height="50" alt="Italian Trulli">
+		</section>
+		<div id="helpDiv" >
+			<p id="helpText">
+			</p>
+			<ul class="l" style="list-style-type:disc;">
+			<li>Money</li>
+			<li>ID identification Card</li>
+			<li>A key to open the room</li>
+			<li>The Crown of the Queen</li>
+			<li>The royal sword arm </li>
+			</ul>
+			<ul class="l2" style="list-style-type:disc;">
+			<li>Writing the location: <strong>north, east, west, and south</strong></li>
+			<li>If you want to take an item, you need to write: take + the name of the item</li>
+			<li>If you want to use an item, you need to write: use +the name of the item </li>
+			<li>Money that will allow you to pay you identification ID</li>
+			<li>If you are block to enter a room, read the message, and you will need to use a specific item to unlock it. It is important to have the key before going forward in the adventure</li>
+
+			</ul>
+		<button id="closeButton">Close</button>
+		</div>
+		<section id ="enImage" class="endOftheGame">
+		<p class="last">Congratualtion and well done</p>
+
+</section>
+		<!-- load Content Delivery Network (CDN) scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/CSSPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/easing/EasePack.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenLite.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
+			<!-- add your own script -->
+			<script src="game.js"></script>
+	</body>
+</html>
